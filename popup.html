@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video Speed Control</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f5f5f5;
+      max-width: 300px;
+    }
+
+    h2 {
+      font-size: 1.5em;
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    select {
+      width: 100%;
+      padding: 10px;
+      font-size: 1em;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      background-color: #fff;
+      cursor: pointer;
+    }
+
+    select:focus {
+      outline: none;
+      border-color: #007bff;
+    }
+
+    .footer {
+      margin-top: 20px;
+      font-size: 0.8em;
+      color: #666;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <h2>Set Video Speed</h2>
+  <select id="speedSelector">
+    <option value="0.5">0.5x</option>
+    <option value="1.0">1.0x</option>
+    <option value="1.5">1.5x</option>
+    <option value="2.0">2.0x</option>
+  </select>
+
+  <div class="footer">
+    <p>Video Speed Control</p>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+
+</html>
